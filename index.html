@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="layout">
+            <div class="btns">
+                <button id="removeBtn">Remove</button>
+                <button id="newBtn">New</button>
+            </div>
+
+            <div class="gridLayout"></div>
+
+        </div>
+    </div>
+
+    <div id="modalContainer" class="hidden">
+        <div id="modal">
+            <h2>New Book</h2>
+            <form id="newBookForm">
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" required>
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+                <div class="checkbox-container">
+                    <label for="read">Read:</label>
+                    <input type="checkbox" id="read" name="read">
+                </div>
+                <label for="numberOfPages">Number of Pages:</label>
+                <input type="number" id="numberOfPages" name="numberOfPages" required>
+                <button type="submit">Add Book</button>
+                <button type="button" id="cancelBtn">Cancel</button>
+            </form>
+        </div>
+    </div>
+    <script src="logic.js"></script>
+</body>
+</html>

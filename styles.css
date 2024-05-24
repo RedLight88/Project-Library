@@ -1,0 +1,151 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #fb923c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout {
+    height: 80vh;
+    width: 40vw;
+    background-color: #e5e7eb;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0 0px 10px 5px rgba(0,0,0, 0.4);
+    padding: 2em;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.btns button{
+    height: 5rem;
+    width: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: blanchedalmond;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover{
+    background-color: rgb(255, 217, 0);
+    
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    height: 100%;
+    max-width: 15em;
+    max-height: 15em;
+    background-color: #bbf7d0;
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+    overflow: hidden; 
+    padding: 1em; 
+    box-sizing: border-box; 
+}
+
+.card h3, .card p {
+    margin: 0.5em;
+    padding: 0;
+    overflow-wrap: break-word; 
+    flex: 1 1 auto; 
+}
+
+
+.gridLayout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1em;
+}
+
+.highlight {
+    border: 2px solid red;
+    background-color: #ffcccc;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+#modalContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+#modalContainer.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+#modal {
+    background: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 500px;
+}
+
+#modal form {
+    display: flex;
+    flex-direction: column;
+}
+
+#modal label {
+    margin-top: 1em;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+}
+
+
+
+.checkbox-container input[type="checkbox"] {
+    margin-top: 1.5em;
+   
+}
+
+
+
+#modal button {
+    margin-top: 1em;
+}
+
+
+
